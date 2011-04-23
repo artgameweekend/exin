@@ -65,7 +65,8 @@ function Move_Avatar()
 			
 			if(Input.GetKey(KeyCode.UpArrow))
 			{
-				g_go_avatar.transform.Translate(Vector3(0, 0, v_speed_translate * Time.deltaTime));
+				//g_go_avatar.transform.Translate(Vector3(0, 0, v_speed_translate * Time.deltaTime));
+				g_go_avatar.transform.Translate(Vector3(0, -v_speed_translate * Time.deltaTime, 0));
 			}
 			else if(Input.GetKey(KeyCode.RightArrow))
 			{
